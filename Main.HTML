@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="vieport" content="width=device-width , intial-scale=1.0">
+    <title>Selin tepe Sınıf : 11-B No : 24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="header" id="header">
+          <nav>
+              <img src="images/logo1.png" class="logo">
+              <ul>  
+                  <li><a href="#" id="models">Model S</a></li>
+                  <li><a href="#" id="model3">Model 3</a></li>
+                  <li><a href="#" id="modelx">Model X</a></li>
+                  <li><a href="#" id="modely">Model Y</a></li>
+              </ul>
+              <a href="About.html" class="btn">Reserve Now</a>
+          </nav>
+          <div class="info">
+              <div>
+                  <h2 id="hız" >1.9 s</h2>
+                  <p>100 kmh</p>
+              </div>
+              <div>
+                <h2 id="max">321 kmh</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="range">637 km</h2>
+                <p>Max Range</p>
+            </div>
+             <div class="line">                
+             </div>
+             <div>
+                 <h2 id="model">Model S</h2>
+             </div>
+          </div>
+      </div>
+
+      <script>  
+         var  header = document.getElementById("header");
+         var  ms = document.getElementById("models");
+         var  m3 = document.getElementById("model3");
+         var  mx = document.getElementById("modelx");
+         var  my = document.getElementById("modely");
+         var  model = document.getElementById("model");
+         var hız = document.getElementById("hız");
+         var max = document.getElementById("max");
+         var range = document.getElementById("range");
+
+         ms.onclick = function(){
+             header.style.backgroundImage = "url(images/image-1.png)";
+             model.innerHTML = "Model S";
+             hız.innerHTML = "1.9 s";
+             max.innerHTML = "321 kmh";
+             range.innerHTML ="637 km";
+         }
+         m3.onclick = function(){
+             header.style.backgroundImage = "url(images/image-2.png)";
+             model.innerHTML = "Model 3";
+             hız.innerHTML = "3.4 s";
+             max.innerHTML = "261 kmh";
+             range.innerHTML ="576 km";
+         }
+         mx.onclick = function(){
+             header.style.backgroundImage = "url(images/image-3.png)";
+             model.innerHTML = "Model X";
+             hız.innerHTML = "2.5 s";
+             max.innerHTML = "249 kmh";
+             range.innerHTML = "435 km";
+         }
+         my.onclick = function(){
+             header.style.backgroundImage = "url(images/image-4.png)";
+             model.innerHTML = "Model Y";
+             hız.innerHTML = "1.1 s";
+             max.innerHTML = "250 kmh";
+             range.innerHTML = "524 km";
+         }
+    </script>
+</body>
+</head>
+</html>
